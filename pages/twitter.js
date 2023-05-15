@@ -27,7 +27,7 @@ export default function Twitter(props) {
 
       <div className="mt-8">
         {
-          (!props.twitterInfo)? <p>Couldn't fetch information from Twitter</p>: <TwitterCard twitterInfo={props.twitterInfo} />
+          (!props.twitterInfo)? <p>Couldnt fetch information from Twitter</p>: <TwitterCard twitterInfo={props.twitterInfo} />
         }
       </div>
     </div>
