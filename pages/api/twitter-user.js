@@ -27,6 +27,7 @@ export default async (req, res) => {
       let twitterInfo = {
         'screen_name': userResponse.screen_name,
         'name': userResponse.name,
+        'userID': userResponse.userID,
         'profile_image_url': userResponse.profile_image_url_https
       }
     
