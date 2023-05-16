@@ -14,9 +14,9 @@ const twitterClient = new TwitterApi({
 */
   console.log("user1");
   const twitterClient = new TwitterApi('6lzVZHTWWEaqocAewMyhNFdmL');
-  const readOnlyClient = twitterClient.readOnly;
-  const user = await readOnlyClient.v2.userByUsername('YToimich');
-  console.log(user);
+  //const readOnlyClient = twitterClient.readOnly;
+  //const user = await readOnlyClient.v2.userByUsername('YToimich');
+  //console.log(user);
   console.log("user2");
 
   return (
