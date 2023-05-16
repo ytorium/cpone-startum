@@ -12,10 +12,12 @@ const twitterClient = new TwitterApi({
     accessSecret: process.env.ACCESS_SECRET!,
 });
 */
+  console.log("user1");
   const twitterClient = new TwitterApi('6lzVZHTWWEaqocAewMyhNFdmL');
   const readOnlyClient = twitterClient.readOnly;
-  const user = readOnlyClient.v2.userByUsername('YToimich');
+  const user = await readOnlyClient.v2.userByUsername('YToimich');
   console.log(user);
+  console.log(user2);
 
   return (
     <div className="p-2 max-w-xs lg:max-w-md mx-auto mt-12">
