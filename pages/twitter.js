@@ -15,7 +15,7 @@ function TwitterCard(props) {
         <p className="font-bold text-lg leading-6">{props.twitterInfo.name}</p>
         <p className="text-sm text-gray-600">@{props.twitterInfo.screenName}</p>
         <p className="font-bold text-lg leading-6">{props.twitterInfo.description}</p>
-        <p className="mt-4 text-sm whitespace-pre-wrap">{props.twitterInfo.description}</p>
+        <p className="mt-4 text-sm whitespace-pre-wrap">{props.twitterInfo.id}</p>
       </div>
     </div>
   )
