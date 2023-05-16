@@ -28,7 +28,7 @@ export default async (req, res) => {
         'screen_name': userResponse.screen_name,
         'name': userResponse.name,
         'description': userResponse.description,
-        'id': userResponse.id,
+        'userId': userResponse.user_id,
         'profile_image_url': userResponse.profile_image_url_https
       }
     

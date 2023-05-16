@@ -15,7 +15,7 @@ function TwitterCard(props) {
         <p className="font-bold text-lg leading-6">{props.twitterInfo.name}</p>
         <p className="text-sm text-gray-600">@{props.twitterInfo.screenName}</p>
         <p className="font-bold text-lg leading-6">{props.twitterInfo.description}</p>
-        <p className="mt-4 text-sm whitespace-pre-wrap">{props.twitterInfo.id}</p>
+        <p className="mt-4 text-sm whitespace-pre-wrap">{props.twitterInfo.userId}</p>
       </div>
     </div>
   )
@@ -43,6 +43,7 @@ export async function getServerSideProps(context) {
   twitterInfo = {
     'screenName': userResponse.screen_name,
     'name': userResponse.name,
+    'userId' : userResponse.user_id,
     'description': userResponse.description,
     'profileImageURL': userResponse.profile_image_url_https,
     'profileBannerURL': userResponse.profile_banner_url,
