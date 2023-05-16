@@ -17,7 +17,7 @@ const twitterClient = new TwitterApi({
   const readOnlyClient = twitterClient.readOnly;
   const user = await readOnlyClient.v2.userByUsername('YToimich');
   console.log(user);
-  console.log(user2);
+  console.log("user2");
 
   return (
     <div className="p-2 max-w-xs lg:max-w-md mx-auto mt-12">
